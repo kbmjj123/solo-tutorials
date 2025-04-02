@@ -1,0 +1,4 @@
+packages:
+  - "react-project-*"
+  - "nextjs-project-*"
+  - "html-js-css-project-*"
