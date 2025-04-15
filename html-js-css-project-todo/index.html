@@ -36,16 +36,17 @@
             </div>
         </footer>
     </div>
-    <script src="../common-components/dist/index.umd.js" type="text/javascript"></script>
+    <script src="dist/index.umd.js" type="text/javascript"></script>
 		<script>
-			// 创建右下角链接
+			CommonComponents.CornerLink({
+				url: 'https://solomakerstudio.com',
+				type: 'built-by-solo',
+				id: 'solo-link'
+			});
 			const cornerLink = CommonComponents.CornerLink({
-				url: 'https://github.com/your-username/your-repo',
-				text: '查看源码',
-				styles: {
-					backgroundColor: '#333',
-					color: '#fff'
-				}
+				url: 'https://github.com/kbmjj123/solo-tutorials',
+				type: 'view-source',
+				id: 'source-link'
 			});
 		</script>
     <script src="js/model.js"></script>
