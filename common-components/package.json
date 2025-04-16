@@ -1,6 +1,7 @@
 {
-  "name": "common-components",
-  "version": "1.0.0",
+  "name": "solomaker-common-components",
+  "version": "1.0.1",
+	"author": "solomaker",
   "description": "Common components for HTML/JS and React projects",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",

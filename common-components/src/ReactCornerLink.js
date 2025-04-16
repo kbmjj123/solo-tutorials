@@ -4,7 +4,7 @@ import CornerLink from './CornerLink';
 /**
  * React版本的CornerLink组件
  */
-const ReactCornerLink = ({ url, text, styles, target, id }) => {
+const ReactCornerLink = ({ url, text, styles, target, id, type }) => {
   const cornerLinkRef = useRef(null);
   
   useEffect(() => {
@@ -14,7 +14,8 @@ const ReactCornerLink = ({ url, text, styles, target, id }) => {
       text,
       styles,
       target,
-      id
+      id,
+      type
     });
     
     // 组件卸载时移除CornerLink
@@ -32,10 +33,11 @@ const ReactCornerLink = ({ url, text, styles, target, id }) => {
         url,
         text,
         styles,
-        target
+        target,
+        type
       });
     }
-  }, [url, text, styles, target]);
+  }, [url, text, styles, target, type]);
   
   // React组件不渲染任何内容，因为链接是通过DOM操作添加的
   return null;
