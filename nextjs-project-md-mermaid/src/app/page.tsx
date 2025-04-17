@@ -9,13 +9,23 @@ export default async function Home() {
   // 读取并解析 Markdown 文件
   async function getMarkdownContent() {
     try {
-      // 使用完整 URL 获取 Markdown 文件
-      const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
-      const response = await fetch(`${baseUrl}/test.md`, { cache: 'no-store' });
+      // 使用相对路径获取 Markdown 文件
+      const response = await fetch('/test.md', { 
+        cache: 'no-store',
+        headers: {
+          'Content-Type': 'text/markdown',
+        }
+      });
       
       if (!response.ok) {
-        throw new Error('Failed to fetch markdown file');
+        console.error('Failed to fetch markdown file:', {
+          status: response.status,
+          statusText: response.statusText,
+          url: response.url
+        });
+        throw new Error(`Failed to fetch markdown file: ${response.status} ${response.statusText}`);
       }
+      
       const fileContent = await response.text();
       
       // 使用 remark 处理 Markdown
