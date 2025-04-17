@@ -10,7 +10,7 @@ export default async function Home() {
   async function getMarkdownContent() {
     try {
       // 使用完整 URL 获取 Markdown 文件
-      const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+      const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
       const response = await fetch(`${baseUrl}/test.md`, { cache: 'no-store' });
       
       if (!response.ok) {
