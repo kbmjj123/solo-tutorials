@@ -10,7 +10,7 @@ export default async function Home() {
   async function getMarkdownContent() {
     try {
       // 使用相对路径获取 Markdown 文件
-      const response = await fetch('/test.md', { 
+      const response = await fetch('https://nextjs-project-md-mermaid.vercel.app/test.md', { 
         cache: 'no-store',
         headers: {
           'Content-Type': 'text/markdown',
