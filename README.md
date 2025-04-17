@@ -57,7 +57,7 @@ pnpm dev
 ## 关于作者
 
 - 个人网站：[Solo Maker Studio](https://solomakerstudio.com)
-- GitHub: [@yourusername](https://github.com/yourusername)
+- GitHub: [@yourusername](https://github.com/kbmjj123)
 
 ## 支持与反馈
 
