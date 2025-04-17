@@ -8,6 +8,8 @@ const MermaidWrapper = ({ code, containerId }: { code: string, containerId: stri
   const { theme } = useTheme();
   const [svg, setSvg] = useState<string>('');
   const [isRendered, setIsRendered] = useState(false);
+
+	console.info(svg, isRendered)
   
   useEffect(() => {
     const renderMermaid = async () => {

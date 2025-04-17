@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { remark } from 'remark';
 import html from 'remark-html';
 import remarkGfm from 'remark-gfm';
