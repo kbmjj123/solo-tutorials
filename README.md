@@ -29,7 +29,7 @@ Solo Tutorials 是一个面向独立开发者的项目教程集合，旨在提�
 
 1. 克隆项目
 ```bash
-git clone https://github.com/yourusername/solo-tutorials.git
+git clone https://github.com/kbmjj123/solo-tutorials.git
 ```
 
 2. 安装依赖
@@ -56,7 +56,7 @@ pnpm dev
 
 ## 关于作者
 
-- 个人网站：[Solo Maker Studio](https://solomakerstudio.com)
+- 个人网站：[Solo Maker Studio](https://kbmjj123.dev)
 - GitHub: [@yourusername](https://github.com/kbmjj123)
 
 ## 支持与反馈
